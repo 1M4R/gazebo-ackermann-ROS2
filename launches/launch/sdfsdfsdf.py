@@ -64,32 +64,7 @@ def generate_launch_description():
             output='screen'
         ),
 
-        Node(
-            package = navpkg,
-            name = 'localisation',
-            executable = 'localisation.py',
-            parameters = [navconfig]
-        ),
-
-        Node(
-            package = mappkg,
-            name = 'bof',
-            executable = 'bof',
-        ),
-
-        Node(
-            package = navpkg,
-            name = 'click_planner',
-            executable = 'clickplanner.py',
-            parameters = [navconfig]
-        ),
-#
-       Node(
-            package = navpkg,
-            name = 'path_tracker',
-            executable = 'tracker.py',
-            parameters = [navconfig]
-        )
+        
     ])
 
 def main():
